@@ -1,0 +1,198 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body, html{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url('../assets/uhd-6686654_1280.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  text-transform: uppercase;
+  background-color: rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+}
+
+nav ul li {
+  display: inline;
+  margin: 15px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: large;
+  margin: 10px;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.img-logo{
+  display: flex;
+  flex-direction:column;
+}
+
+.h1{
+  color:rgb(12, 240, 15);
+  background: black;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  padding: 10px;
+  display: inline-block;
+}
+
+.p-header{
+  padding: 10px;
+  margin: 10px;
+  background: white;
+  color: black;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: oblique;
+  display: inline-block;
+}
+
+p{
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  font-size: 22px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: oblique;
+  display: inline-block;
+}
+
+h2{
+    color:rgb(12, 240, 15);
+    padding: 5px;
+    margin: 10px;
+    font-style: italic;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.section-sobre-nosotros,
+.plataformas,
+.section-blog,
+.contacto{
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+}
+
+.div-sobre-nosotros{
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.h3-sobre-nosotros{
+  color: white;
+  background-color: rgba(0, 0, 0, 0.492);
+  font-size: 50px;
+  font-weight: bolder;
+  text-align: right;
+}
+
+.p-sobre-nosotros{
+  color: grey;
+  font-size: 20px;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  width: 100%;
+  border: gray solid 1px;
+}
+
+.p-plataformas{
+  padding: 10px 5px;
+  margin: 5px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.p-blog{
+  padding: 10px 5px;
+  margin: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.contacto .form-control{
+  margin-bottom: 10px;
+}
+
+.label{
+  color: white;
+  font-size: 20px;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h3{
+  background-color: whitesmoke;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-style: oblique;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 20px;
+  flex-shrink: 0;
+}
+
+.client-login-button {
+  font-weight: bold;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.client-login-button:hover {
+  background-color: #0057b35e;
+  color: #ffffff;
+}
+
+.ctaDesktopText{
+  color: black;
+  background-color: white;
+}
+
+/* Responsive mínimo usando Bootstrap + ajustes CSS */
+@media (max-width: 480px) {
+  .h1 { font-size: 22px; }
+  h2 { font-size: 22px; }
+  .p-header, p { font-size: 16px; }
+  .p-plataformas { font-size: 18px; }
+  .h3-sobre-nosotros { font-size: 30px; }
+  footer { font-size: 14px; }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .h1 { font-size: 26px; }
+  h2 { font-size: 26px; }
+  .p-header, p { font-size: 18px; }
+  .p-plataformas { font-size: 22px; }
+  .h3-sobre-nosotros { font-size: 40px; }
+  footer { font-size: 16px; }
+}
