@@ -209,6 +209,123 @@ h4{
   font-size: 25px;
   text-decoration: underline;
 }
+        /* Estilos personalizados para el carrusel */
+        .elegant-carousel .carousel-inner {
+            border-radius: 15px; /* Bordes redondeados */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15); /* Sombra sutil */
+        }
+
+        .elegant-carousel .carousel-item img {
+            object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin distorsión */
+            height: auto; /* Altura fija para escritorio */
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .elegant-carousel .carousel-item img {
+                height: 300px; /* Altura más baja en móviles */
+            }
+        }
+
+        /* Estilo para la transición de fundido */
+        .elegant-carousel.carousel-fade .carousel-item {
+            transition: opacity 1s ease-in-out; /* Transición más lenta y suave */
+            opacity: 0;
+            display: block; /* Asegura que el ítem esté visible para la transición */
+        }
+        
+        .elegant-carousel.carousel-fade .carousel-item.active {
+            opacity: 1;
+        }
+        
+        /* Controles personalizados (flechas) */
+        .elegant-carousel .carousel-control-prev,
+        .elegant-carousel .carousel-control-next {
+            width: 50px; /* Ancho de los controles */
+            height: 50px; /* Altura de los controles */
+            border-radius: 50%; /* Controles circulares */
+            background-color: rgba(255, 255, 255, 0.2); /* Fondo semitransparente */
+            opacity: 0; /* Oculto por defecto */
+            transition: opacity 0.3s ease; /* Transición suave al pasar el ratón */
+            top: 50%;
+            transform: translateY(-50%); /* Centrar verticalmente */
+        }
+
+        .elegant-carousel:hover .carousel-control-prev,
+        .elegant-carousel:hover .carousel-control-next {
+            opacity: 1; /* Mostrar al pasar el ratón por el carrusel */
+        }
+
+        .elegant-carousel .carousel-control-prev:hover,
+        .elegant-carousel .carousel-control-next:hover {
+            background-color: rgba(255, 255, 255, 0.5); /* Aumentar opacidad al pasar el ratón */
+        }
+
+        .elegant-carousel .carousel-control-prev-icon,
+        .elegant-carousel .carousel-control-next-icon {
+            filter: invert(1); /* Cambia el color de la flecha a blanco */
+            width: 1.5rem; /* Tamaño del icono */
+            height: 1.5rem;
+        }
+        .h2-blog{
+          color: black;
+        }
+        /* Estilos para la sección de artículos */
+.blog-articles {
+    padding: 15px;
+}
+
+.blog-post {
+    margin-bottom: 30px;
+    border: 1px solid #dee2e6; /* Gris claro para el borde */
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #ffffff; /* Fondo blanco */
+}
+
+.blog-post h3 {
+    color: #007bff; /* Azul primario para el título */
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+.post-meta {
+    color: #6c757d; /* Gris oscuro para la meta-información */
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.post-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: #0056b3; /* Un azul un poco más oscuro al pasar el ratón */
+}
+
+/* Responsividad básica para pantallas pequeñas */
+@media (max-width: 768px) {
+    .blog-post h3 {
+        font-size: 1.5em;
+    }
+}
+
 /* Responsive mínimo usando Bootstrap + ajustes CSS */
 @media (max-width: 480px) {
   .h1 { font-size: 22px; }
