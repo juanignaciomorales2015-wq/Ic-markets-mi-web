@@ -87,7 +87,6 @@ h2{
 .section-blog,
 .contacto{
   padding: 10px;
-  margin: 10px;
   width: 100%;
 }
 
@@ -147,7 +146,7 @@ h3{
   background-color: whitesmoke;
   color: black;
   text-align:left;
-  font-size: 30px;
+  font-size: 12px;
   font-style: oblique;
 }
 
@@ -219,12 +218,6 @@ h4{
             object-fit: cover; /* Asegura que la imagen cubra todo el espacio sin distorsión */
             height: auto; /* Altura fija para escritorio */
             width: 100%;
-        }
-
-        @media (max-width: 768px) {
-            .elegant-carousel .carousel-item img {
-                height: 300px; /* Altura más baja en móviles */
-            }
         }
 
         /* Estilo para la transición de fundido */
@@ -324,32 +317,6 @@ h4{
   font-size: 12px;
   font-family:Arial, Helvetica, sans-serif
 }
-
-/* Responsividad básica para pantallas pequeñas */
-@media (max-width: 768px) {
-    .blog-post h3 {
-        font-size: 1.5em;
-    }
-}
-
-/* Responsive mínimo usando Bootstrap + ajustes CSS */
-@media (max-width: 480px) {
-  .h1 { font-size: 22px; }
-  h2 { font-size: 22px; }
-  .p-header, p { font-size: 16px; }
-  .p-plataformas { font-size: 18px; }
-  .h3-sobre-nosotros { font-size: 30px; }
-  footer { font-size: 14px; }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
-  .h1 { font-size: 26px; }
-  h2 { font-size: 26px; }
-  .p-header, p { font-size: 18px; }
-  .p-plataformas { font-size: 22px; }
-  .h3-sobre-nosotros { font-size: 40px; }
-  footer { font-size: 16px; }
-}
 .button-contacto{
 padding: 10px;
 margin: 10px;
@@ -370,3 +337,34 @@ padding: 5px;
   font-size: 12px;
   font-family:Arial, Helvetica, sans-serif
 }
+
+/* Responsividad básica para pantallas pequeñas */
+@media (max-width: 768px) {
+    .blog-post h3 {
+        font-size: 1em;
+    }
+}
+
+/* Responsive mínimo usando Bootstrap + ajustes CSS */
+@media (max-width: 480px) {
+  .h1 { font-size: 22px; }
+  h2 { font-size: 17px; }
+  .p-header, p { font-size: 16px; }
+  .p-plataformas { font-size: 18px; }
+  .h3-sobre-nosotros { font-size: 20px; }
+  .h3-contacto { font-size: 17px; }
+  .text-center { font-size: 15px; }
+  h4 { font-size: 15px; }
+  footer p { font-size: 10px; }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .h1 { font-size: 26px; }
+  h2 { font-size: 26px; }
+  .p-header, p { font-size: 18px; }
+  .p-plataformas { font-size: 22px; }
+  .h3-sobre-nosotros { font-size: 40px; }
+  footer { font-size: 16px; }
+}
+
+
