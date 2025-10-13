@@ -248,55 +248,55 @@ h4{
             opacity: 0; /* Oculto por defecto */
             transition: opacity 0.3s ease; /* Transición suave al pasar el ratón */
             top: 50%;
-            transform: translateY(-50%); /* Centrar verticalmente */
+            transform: translateY(-50%);
         }
 
         .elegant-carousel:hover .carousel-control-prev,
         .elegant-carousel:hover .carousel-control-next {
-            opacity: 1; /* Mostrar al pasar el ratón por el carrusel */
+            opacity: 1; 
         }
 
         .elegant-carousel .carousel-control-prev:hover,
         .elegant-carousel .carousel-control-next:hover {
-            background-color: rgba(255, 255, 255, 0.5); /* Aumentar opacidad al pasar el ratón */
+            background-color: rgba(255, 255, 255, 0.5); 
         }
 
         .elegant-carousel .carousel-control-prev-icon,
         .elegant-carousel .carousel-control-next-icon {
-            filter: invert(1); /* Cambia el color de la flecha a blanco */
-            width: 1.5rem; /* Tamaño del icono */
+            filter: invert(1);
+            width: 1.5rem;
             height: 1.5rem;
         }
         .h2-blog{
           color: black;
         }
-        /* Estilos para la sección de artículos */
+       
 .blog-articles {
     padding: 15px;
 }
 
 .blog-post {
     margin-bottom: 30px;
-    border: 1px solid #dee2e6; /* Gris claro para el borde */
+    border: 1px solid #dee2e6; 
     padding: 20px;
     border-radius: 5px;
-    background-color: #ffffff; /* Fondo blanco */
+    background-color: #ffffff; 
 }
 
 .blog-post h3 {
-    color: #007bff; /* Azul primario para el título */
+    color: black;
     font-size: 1.8em;
     margin-top: 0;
+   text-decoration: underline;
 }
 
 .post-meta {
-    color: #6c757d; /* Gris oscuro para la meta-información */
+    color: #6c757d;
     font-size: 0.9em;
-    margin-bottom: 15px;
 }
 
 .post-image {
-    max-width: 100%;
+    width: 5%;
     height: auto;
     display: block;
     margin: 15px 0;
@@ -305,18 +305,24 @@ h4{
 
 .read-more {
     display: inline-block;
-    background-color: #007bff;
-    color: #ffffff;
+    background-color: whitesmoke;
+    color: black;
     padding: 8px 15px;
-    border-radius: 5px;
+    border-radius: 5px solid;
     text-decoration: none;
     font-weight: bold;
+    border: #222 solid;
     margin-top: 10px;
     transition: background-color 0.3s ease;
 }
 
 .read-more:hover {
-    background-color: #0056b3; /* Un azul un poco más oscuro al pasar el ratón */
+    background-color: #0056b3; 
+}
+.p-blog{
+  color: black;
+  font-size: 12px;
+  font-family:Arial, Helvetica, sans-serif
 }
 
 /* Responsividad básica para pantallas pequeñas */
