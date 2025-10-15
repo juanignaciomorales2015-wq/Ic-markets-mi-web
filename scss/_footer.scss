@@ -1,0 +1,12 @@
+%box-style {
+  padding: nth($spacings, 2);
+  background: map-get($colors, dark);
+  color: white;
+}
+
+footer {
+  @extend %box-style;
+  text-align: center;
+  margin-top: nth($spacings, 3);
+  flex-shrink: 0;
+}

@@ -1,3 +1,405 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: url("../assets/mobile-34.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+
+.post-image {
+  width: 5%;
+  height: auto;
+  display: block;
+  margin: 15px 0;
+  border-radius: 5px;
+}
+
+header {
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+header nav ul li {
+  margin: 10px;
+}
+header a {
+  text-decoration: none;
+  color: #fff;
+  font-size: large;
+  margin: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.img-logo {
+  display: flex;
+  flex-direction: column;
+}
+
+.h1 {
+  color: rgb(12, 240, 15);
+  background: black;
+  font-size: 40px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-transform: uppercase;
+  padding: 10px;
+  display: inline-block;
+}
+
+.p-header {
+  padding: 10px;
+  margin: 10px;
+  background: white;
+  color: black;
+  font-size: 18px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: oblique;
+  display: inline-block;
+}
+
+p {
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  font-size: 20px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: oblique;
+  display: inline-block;
+}
+
+h2 {
+  color: white;
+  padding: 5px;
+  margin: 5px;
+  font-style: italic;
+  font-size: 37px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  text-decoration: underline;
+}
+
+h3 {
+  background-color: whitesmoke;
+  color: black;
+  text-align: left;
+  font-size: 12px;
+  font-style: oblique;
+}
+
+h4 {
+  color: white;
+  font-size: 25px;
+  text-decoration: underline;
+}
+
+.h2-blog {
+  color: black;
+}
+
+.h3-contacto {
+  padding: 5px;
+  color: black;
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.p-blog {
+  color: black;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.section-sobre-nosotros,
+.plataformas,
+.section-blog,
+.contacto {
+  padding: 10px;
+  margin: 10px;
+  width: 100%;
+}
+
+.div-sobre-nosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.h3-sobre-nosotros {
+  color: white;
+  background-color: rgba(0, 0, 0, 0.492);
+  font-size: 30px;
+  padding: 10px;
+  margin: 10px;
+  font-weight: bolder;
+  text-align: right;
+}
+
+.p-sobre-nosotros {
+  color: white;
+  font-size: 14px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  width: 85%;
+}
+
+.p-plataformas {
+  padding: 10px 5px;
+  margin: 5px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.contacto .form-control {
+  margin-bottom: 10px;
+}
+
+.label {
+  color: white;
+  font-size: 20px;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.section-contacto {
+  background-color: white;
+  padding: 5px;
+}
+
+.p-contacto {
+  color: black;
+  font-size: 12px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+footer {
+  padding: 10px;
+  background: #222;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  flex-shrink: 0;
+}
+
+.blog-articles {
+  padding: 15px;
+}
+
+.blog-post {
+  margin-bottom: 30px;
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+}
+.blog-post h3 {
+  color: black;
+  font-size: 1.8em;
+  margin-top: 0;
+  text-decoration: underline;
+}
+.blog-post .post-meta {
+  color: #6c757d;
+  font-size: 0.9em;
+}
+.blog-post .read-more {
+  display: inline-block;
+  background-color: whitesmoke;
+  color: black;
+  padding: 8px 15px;
+  border: #222 solid;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+.blog-post .read-more:hover {
+  background-color: #0056b3;
+}
+
+.p-blog {
+  padding: 10px 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.elegant-carousel .carousel-inner {
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+.elegant-carousel .carousel-item img {
+  object-fit: cover;
+  height: auto;
+  width: 100%;
+}
+.elegant-carousel.carousel-fade .carousel-item {
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
+  display: block;
+}
+.elegant-carousel.carousel-fade .carousel-item.active {
+  opacity: 1;
+}
+.elegant-carousel .carousel-control-prev,
+.elegant-carousel .carousel-control-next {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.elegant-carousel:hover .carousel-control-prev,
+.elegant-carousel:hover .carousel-control-next {
+  opacity: 1;
+}
+.elegant-carousel .carousel-control-prev:hover,
+.elegant-carousel .carousel-control-next:hover {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.elegant-carousel .carousel-control-prev-icon,
+.elegant-carousel .carousel-control-next-icon {
+  filter: invert(1);
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.client-login-button {
+  font-weight: bold;
+  color: white;
+  border-radius: 20px;
+  padding: 10px 20px;
+}
+
+.client-login-button:hover {
+  background-color: rgba(0, 87, 179, 0.368627451);
+  color: #ffffff;
+}
+
+.ctaDesktopText {
+  color: black;
+  background-color: white;
+}
+
+button, input[type=submit] {
+  background-color: white;
+  color: black;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+button:hover, input[type=submit]:hover {
+  background-color: #0056b3;
+}
+
+.button1 {
+  background-color: white;
+  text-align: center;
+  color: black;
+  font-weight: bolder;
+}
+
+.btn-sobre-nosotros {
+  background-color: rgb(12, 240, 15);
+  color: black;
+  font-weight: bold;
+  text-align: right;
+}
+
+.button-contacto {
+  padding: 10px;
+  margin: 10px;
+}
+
+@media (max-width: 768px) {
+  .blog-post h3 {
+    font-size: 1em;
+  }
+}
+@media (max-width: 768px) {
+  .blog-post h3 {
+    font-size: 1em;
+  }
+}
+/* Responsive mínimo usando Bootstrap + ajustes CSS */
+@media (max-width: 480px) {
+  .h1 {
+    font-size: 22px;
+  }
+  h2 {
+    font-size: 17px;
+  }
+  .p-header, p {
+    font-size: 16px;
+  }
+  .p-plataformas {
+    font-size: 18px;
+  }
+  .h3-sobre-nosotros {
+    font-size: 20px;
+  }
+  .h3-contacto {
+    font-size: 17px;
+  }
+  .text-center {
+    font-size: 15px;
+  }
+  h4 {
+    font-size: 15px;
+  }
+  footer p {
+    font-size: 10px;
+  }
+}
+@media (min-width: 481px) and (max-width: 768px) {
+  .h1 {
+    font-size: 26px;
+  }
+  h2 {
+    font-size: 26px;
+  }
+  .p-header, p {
+    font-size: 18px;
+  }
+  .p-plataformas {
+    font-size: 22px;
+  }
+  .h3-sobre-nosotros {
+    font-size: 40px;
+  }
+  footer {
+    font-size: 16px;
+  }
+}
 
 /*# sourceMappingURL=main.css.map */

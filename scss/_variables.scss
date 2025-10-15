@@ -1,0 +1,20 @@
+// Colores
+$colors: (
+  primary: rgb(12, 240, 15),
+  secondary: #0056b3,
+  dark: #222,
+  light: #fff,
+  gray: #6c757d,
+  bg-overlay: rgba(0, 0, 0, 0.5)
+);
+
+//Tipografías
+$fonts: (
+  main: "Arial, Helvetica, sans-serif",
+  serif: "Georgia, 'Times New Roman', Times, serif",
+  fancy: "Verdana, Geneva, Tahoma, sans-serif"
+);
+
+// 📏 Espaciados
+$spacings: 5px, 10px, 20px;
+
