@@ -1,0 +1,33 @@
+@media (max-width: 768px) {
+    .blog-post h3 {
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 768px) {
+    .blog-post h3 {
+        font-size: 1em;
+    }
+}
+
+/* Responsive mínimo usando Bootstrap + ajustes CSS */
+@media (max-width: 480px) {
+  .h1 { font-size: 22px; }
+  h2 { font-size: 17px; }
+  .p-header, p { font-size: 16px; }
+  .p-plataformas { font-size: 18px; }
+  .h3-sobre-nosotros { font-size: 20px; }
+  .h3-contacto { font-size: 17px; }
+  .text-center { font-size: 15px; }
+  h4 { font-size: 15px; }
+  footer p { font-size: 10px; }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .h1 { font-size: 26px; }
+  h2 { font-size: 26px; }
+  .p-header, p { font-size: 18px; }
+  .p-plataformas { font-size: 22px; }
+  .h3-sobre-nosotros { font-size: 40px; }
+  footer { font-size: 16px; }
+}

@@ -1,0 +1,86 @@
+header {
+  text-align: center;
+  padding: nth($spacings, 2);
+  text-transform: uppercase;
+  background-color: map-get($colors, bg-overlay);
+  margin-bottom: nth($spacings, 3);
+
+  nav ul li { margin: nth($spacings, 2); }
+
+  a {
+    text-decoration: none;
+    color: map-get($colors, light);
+    font-size: large;
+    margin: nth($spacings, 2);
+    font-family: "Times New Roman", Times, serif;
+  }
+}
+
+.img-logo { @include flex-center(column); }
+
+.h1 {
+  color: map-get($colors, primary);
+  background: black;
+  font-size: 40px;
+  font-family: unquote(map-get($fonts, serif));
+  text-transform: uppercase;
+  padding: nth($spacings, 2);
+  display: inline-block;
+}
+
+.p-header {
+  padding: nth($spacings, 2);
+  margin: nth($spacings, 2);
+  background: white;
+  color: black;
+  font-size: 18px;
+  font-family: unquote(map-get($fonts, serif));
+  font-style: oblique;
+  display: inline-block;
+}
+p{
+  padding: 10px;
+  margin: 10px;
+  color: white;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: oblique;
+  display: inline-block;
+}
+h2{
+    color:white;
+    padding: 5px;
+    margin: 5px;
+    font-style: italic;
+    font-size: 37px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    text-decoration: underline;
+}
+h3{
+  background-color: whitesmoke;
+  color: black;
+  text-align:left;
+  font-size: 12px;
+  font-style: oblique;
+}
+h4{
+  color: white;
+  font-size: 25px;
+  text-decoration: underline;
+}
+  .h2-blog{
+          color: black;
+        }
+        .h3-contacto{
+padding: 5px;
+color: black;
+font-size: 25px;
+font-weight: bolder;
+font-family: Arial, Helvetica, sans-serif;
+}
+.p-blog{
+  color: black;
+  font-size: 12px;
+  font-family:Arial, Helvetica, sans-serif
+}

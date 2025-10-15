@@ -1,0 +1,46 @@
+.blog-articles {
+  padding: 15px;
+}
+
+.blog-post {
+  margin-bottom: 30px;
+  border: 1px solid #dee2e6;
+  padding: 20px;
+  border-radius: 5px;
+  background-color: map-get($colors, light);
+
+  h3 {
+    color: black;
+    font-size: 1.8em;
+    margin-top: 0;
+    text-decoration: underline;
+  }
+
+  .post-meta {
+    color: map-get($colors, gray);
+    font-size: 0.9em;
+  }
+
+  .read-more {
+    display: inline-block;
+    background-color: whitesmoke;
+    color: black;
+    padding: 8px 15px;
+    border: map-get($colors, dark) solid;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+
+    &:hover { background-color: map-get($colors, secondary); }
+  }
+}
+.p-blog{
+  padding: 10px 5px;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
